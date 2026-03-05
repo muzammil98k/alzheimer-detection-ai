@@ -14,7 +14,7 @@ model = CNN3D().to(device)
 
 # Load trained weights
 model.load_state_dict(torch.load(
-    "models_saved/cnn3d_fold4.pth", map_location=device))
+    "models/best_model.pth", map_location=device))
 
 model.eval()
 
