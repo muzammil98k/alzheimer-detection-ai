@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alzheimer MRI Detection</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Alzheimer Disease Detection</h1>
+
+<h3>Upload Preprocessed MRI (.pt file)</h3>
+
+<form method="POST" enctype="multipart/form-data">
+<input type="file" name="file" accept=".pt" required>
+<br><br>
+<button type="submit">Predict</button>
+</form>
+
+{% if result %}
+
+<h2>Prediction: {{ result }}</h2>
+<h3>Confidence: {{ confidence }}</h3>
+
+{% endif %}
+
+</body>
+</html>

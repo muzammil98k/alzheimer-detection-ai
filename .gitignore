@@ -1,0 +1,11 @@
+hat3d_env/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.nii
+*.nii.gz
+*.tar
+models_saved/
+uploads/
